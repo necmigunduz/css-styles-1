@@ -1,0 +1,61 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 150px;
+	content: 'AAAA';
+	color: black;
+	font-size: 40px;
+}
+
+button::before {
+	content: 'Click here to';
+	color: #0692BC;
+	font-size: 30px;
+	font-weight:900;
+}
+
+button {
+	border: 5px solid #0692BC;
+	border-radius: 50px;
+	cursor: pointer;
+	background: linear-gradient(90deg, #0692BC 50%, rgb(255, 255, 255) 50%);
+	position: relative;
+	background-size: 500%;
+	background-position: 100%;
+	transition: 3s;
+	width: 400px;
+	height: 70px;
+}
+
+button:hover {
+	border: 5px solid #0692BC;
+	border-radius: 50px;
+	cursor: pointer;
+	background: linear-gradient(90deg, #0692BC 50%, rgb(255, 255, 255) 50%);
+	position: relative;
+	background-size: 500%;
+	background-position: 0;
+	transition: 3s;
+	width: 400px;
+	height: 70px;
+}
+
+
+button:hover::before {
+	content: 'Hover';
+	color: white;
+	font-size: 30px;
+	font-weight: 900;
+}
+
+.inside {
+	border: 1px solid #0692BC;
+	border-radius: 100%;
+	background-color: #0692BC;
+	width: 66px;
+	height: 66px;
+	position: absolute;
+	top: -3px;
+	left: -2px;
+}
